@@ -11,6 +11,10 @@ activity = "1.8.0"
 constraintlayout = "2.1.4"
 mockk = "1.13.5"
 room = "2.7.1"
+espressoContrib = "3.6.1"
+retrofit = "2.11.0"
+mockwebserver = "4.10.0"
+moshi-converter = "2.9.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -25,7 +29,10 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
 androidx-room-runtime={group="androidx.room",name ="room-runtime",version.ref="room"}
 androidx-room-compiler={module="androidx.room:room-compiler",version.ref="room"}
-
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+mockwebserver = { group = "com.squareup.okhttp3", name = "mockwebserver", version.ref = "mockwebserver" }
+converter-moshi = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "moshi-converter" }
+androidx-espresso-contrib = { group = "androidx.test.espresso", name = "espresso-contrib", version.ref = "espressoContrib" }
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
