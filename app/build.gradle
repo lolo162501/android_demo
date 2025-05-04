@@ -32,6 +32,7 @@ android {
     }
 }
 dependencies {
+    implementation libs.androidx.uiautomator
     testImplementation libs.mockk
     implementation libs.androidx.room.runtime
     kapt libs.androidx.room.compiler

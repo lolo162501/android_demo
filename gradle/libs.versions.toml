@@ -15,6 +15,7 @@ espressoContrib = "3.6.1"
 retrofit = "2.11.0"
 mockwebserver = "4.10.0"
 moshi-converter = "2.9.0"
+uiautomator = "2.3.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -33,6 +34,7 @@ retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = 
 mockwebserver = { group = "com.squareup.okhttp3", name = "mockwebserver", version.ref = "mockwebserver" }
 converter-moshi = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "moshi-converter" }
 androidx-espresso-contrib = { group = "androidx.test.espresso", name = "espresso-contrib", version.ref = "espressoContrib" }
+androidx-uiautomator = { group = "androidx.test.uiautomator", name = "uiautomator", version.ref = "uiautomator" }
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
