@@ -1,5 +1,8 @@
 package com.example.myapplication.user
 
+import retrofit2.http.GET
+
 interface UserService {
-    fun getUsers(): List<User>
+    @GET("users")
+    suspend fun getUsers(): List<User>
 }

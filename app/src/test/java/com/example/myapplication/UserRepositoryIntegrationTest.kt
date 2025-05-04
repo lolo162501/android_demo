@@ -39,6 +39,7 @@ class UserRepositoryIntegrationTest {
         val body = """[{"id":1,"name":"Carol","email":"carol@example.com"}]"""
         mockWebServer.enqueue(MockResponse().setBody(body).setResponseCode(200))
         val result = repository.fetchFirstUserName()
+        println("Result => $result")
         assertEquals("First user: Carol", result)
     }
 }
