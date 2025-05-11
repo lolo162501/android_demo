@@ -2,3 +2,4 @@
 .gradle
 local.properties
 .kotlin
+python/venv
