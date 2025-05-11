@@ -14,7 +14,8 @@ def main():
     # 1. 用 UiAutomator2Options 設定 capabilities
     opts = UiAutomator2Options()
     opts.platformName = "Android"
-    opts.deviceName = "24121JEGR04503"  # 請替換為實際裝置序號
+    opts.deviceName = "emulator-5554"  # 請替換為實際裝置序號
+    opts.udid = "emulator-5554"
     opts.automationName = "UiAutomator2"
     opts.appPackage = "com.android.chrome"
     opts.appActivity = "com.google.android.apps.chrome.Main"
@@ -23,7 +24,11 @@ def main():
 
     # 2. 建立 Appium 連線
     print("連接裝置並啟動 App: com.android.chrome")
-    driver = webdriver.Remote("http://192.168.0.241:4723", options=opts)
+    driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", options=opts)
+    print("Session ID:", driver.session_id)
+    print("當前包／畫面：", driver.current_package, driver.current_activity)
+    driver.activate_app("com.android.chrome")
+    time.sleep(5)
 
     try:
         # 等待 Chrome 完全啟動
